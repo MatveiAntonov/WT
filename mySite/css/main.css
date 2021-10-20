@@ -1,0 +1,316 @@
+body {
+     margin: 0;
+    font-family: 'Anton', sans-serif;
+    color: 000;
+    font-size: 16px;
+    background: url('../images/intro.jpg') repeat center top / cover;
+    background-clip: content-box;
+    user-select: none;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.container {
+   max-width: 1430px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    padding-top: 30px;
+}
+
+header a {
+    color: #fff;
+}
+
+
+.menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 40px;
+    letter-spacing: 0.1em;      
+    justify-content:space-between;
+    transition: all 0.5s ease;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu p{
+    margin: auto;
+    text-transform: uppercase;
+    margin-right: 40px;
+    letter-spacing: 0.1em;      
+    justify-content:space-between;
+    transition: all 0.5s ease; 
+    color:#f7d201;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    color: #0b061d;
+    text-decoration: underline;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav img{
+    margin-left: 50px;
+}
+
+.offer {
+	text-transform: uppercase;
+	margin-top: 100px;
+}
+
+
+.offer h1 {
+    font-family: Montserrat;
+    letter-spacing: -0.05em;;
+	font-size: 100px;
+    color:#ffffff;  
+    background: #0b061d;
+}
+
+.offer .burning {
+    width: 411px;
+    align-items: center;
+
+}
+
+.offer .man{
+    width: 183px;
+}
+
+.phrase h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 25px;
+    margin-right: 550px;
+    color:white;
+    font-size: 35px;
+    color: #0b061d;
+    width: 415px;
+    background: white;
+    height: 20px;
+    display: flex;
+    align-items: flex-end;
+    background-position: top;
+    text-align: center;
+    letter-spacing: 0.0001em;
+    font-weight: 999;
+}
+
+
+
+.join {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    height: 140.6px;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    margin-top: 0;
+    margin-bottom: 0;
+    background: #a58d04;
+    text-align: center;
+    padding-top: 20px;
+	display: block;
+	font-size: 27px;
+	letter-spacing: 0.1em;
+	border: 5px solid white;
+    width: 350px;
+    height: 100px;
+	transition: all 0.5s ease; 
+    margin-right: 30px;
+    border-radius: 15px;
+}
+
+.btn a {
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.btn:hover {
+	background: #fff;
+    color: #0b061d;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;  
+    background: white;
+    width: 350px;
+    margin-top: 40px;
+    margin-right: 30px;
+    border-radius: 15px;
+    margin-bottom: 450px;
+}
+
+.networks{
+    margin: 5px 20px 5px 5px;
+    font-size: 18px;
+    
+
+}
+
+.joinus{
+    background: white;
+    align-items:center;
+    display: flex;
+    justify-content:center;
+    width: 350px;
+    border-radius: 13px;
+}
+
+.icons img{ 
+    margin: 7px 10px 3.2px auto;
+}
+
+footer{
+    height: 100px;
+}
+
+@media (max-width: 1430px){
+
+    .offer h1 {
+	    font-size: 90px;
+    }
+    
+    .offer .burning {
+        width: 370px;
+    }
+    
+    .offer .man{
+        width: 170px;
+    } 
+
+
+    .phrase h3{
+        font-size: 30px;
+        width: 356px;
+    }
+
+    .nav{
+        align-items: center;
+    }
+
+
+}
+
+@media (max-width: 920px){
+
+    .offer h1 {
+	    font-size: 80px;
+    }
+
+    .offer .burning {
+        width: 357px;
+    }
+    
+    .offer .man{
+        width: 158px;
+    } 
+}
+
+@media (max-width: 800px){
+
+    .offer h1 {
+	    font-size: 70px;
+    }
+
+    .offer .burning {
+        width: 299px;
+        margin: 0 auto;
+    }
+  
+    .offer .man{
+        width: 130px;
+        margin: 0 auto;
+    }
+    
+    .phrase h3{
+        font-size: 27px;
+        width: 322px;
+        margin: 20px auto;
+    }
+
+    .join{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .offer {
+        margin-top: 30px;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav a{
+        margin: 0 auto;
+    }
+
+    .nav p{
+        margin: 0 auto;
+    }
+
+    .nav{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+   .nav img{
+       margin: 0 auto;
+   }
+   
+   .btn{
+       width: 300px;
+       height: 70px;
+   }
+
+   .social{
+       width: 300px;
+       margin: 0 auto;
+   }
+
+   .joinus{
+       width: 300px;
+   }
+
+   .networks{
+       font-size: 15px;
+   }
+
+   footer img{
+       height: 25px;
+   }
+}

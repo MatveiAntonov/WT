@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+   font-family: 'Anton', sans-serif;
+   color: 000;
+   font-size: 16px;
+   background: url('../images/intro.jpg') no-repeat center top / cover;
+   background-clip: content-box;
+   user-select: none;
+   height: 100%;
+   background-attachment: fixed;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main{
+    margin-top: 1.25em;
+    background:#ffffffcb;
+    border-radius: 5em;
+}
+
+
+.header {
+    height: 6.25em;
+    padding-top: 1.875em;
+
+}
+
+header a {
+    color: #fff;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+    margin-right: 2.5em;
+    letter-spacing: 0.1em;      
+    justify-content:space-between;
+    transition: all 0.5s ease;
+}
+.menu p{
+    margin: auto;
+    text-transform: uppercase;
+    margin-right: 2.5em;
+    letter-spacing: 0.1em;      
+    justify-content:space-between;
+    transition: all 0.5s ease; 
+    color:#f7d201;
+    font-size: 0.9375em;
+}
+
+.menu a:hover {
+    color: #0b061d;
+    text-decoration: underline;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .menu{
+    justify-content: center;
+}
+.nav img{
+    margin-left: 3.125em;
+}
+
+.name{
+    font-size: 3.125em;
+    text-align: center;
+}
+
+.contacts h3{
+    font-size: 2em;
+}
+address{
+    font-size: 1.5em;
+    margin-left: 0;
+}
+
+.contacts{
+    margin: 0 auto;
+    width: 14.5em;
+    align-items: center;
+}
+
+.tel{
+    margin-top: 1em;
+     width: 10em; 
+}
+
+.tel a{
+    font-size: 1.4em;
+    color: #0b061d;
+
+}
+
+.altern{
+    margin: 0 auto;
+    font-size: 3em;
+    color: #a58d04;
+}
+
+@media(max-width: 710px){
+    .name{
+        font-size: 35px ;
+    }
+
+    .contacts h3{
+        font-size: 26px;
+    }
+
+    .contacts a{
+        font-size: 18px;
+    }
+
+    .contacts address{
+        font-size: 20px
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav a{
+        margin: 0 auto;
+    }
+
+    .nav p{
+        margin: 0 auto;
+    }
+
+    .nav{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+   .nav img{
+       margin: 0 auto;
+   }
+
+   .header{
+       height: 100%;
+   }
+
+
+}

@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+   font-family: 'Anton', sans-serif;
+   color: 000;
+   font-size: 16px;
+   background: url('../images/intro.jpg') no-repeat center top / cover;
+   background-clip: content-box;
+   user-select: none;
+   height: 100%;
+   background-attachment: fixed;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.container {
+    max-width: 1430px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0 15px;
+}
+
+main{
+    margin-top: 20px;
+    background:#ffffffc7;
+    border-radius: 80px;
+}
+
+.header {
+    padding-top: 30px; 
+
+}
+
+header a {
+    color: #fff;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 40px;
+    letter-spacing: 0.1em;      
+    justify-content:space-between;
+    transition: all 0.5s ease;
+}
+.menu p{
+    margin: auto;
+    text-transform: uppercase;
+    margin-right: 40px;
+    letter-spacing: 0.1em;      
+    justify-content:space-between;
+    transition: all 0.5s ease; 
+    color:#f7d201;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    color: #0b061d;
+    text-decoration: underline;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav img{
+    margin-left: 50px;
+}
+
+.name{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.description {
+	display: flex;
+	justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.description p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	text-align: justify;
+	line-height: 1.62em;
+}
+
+.desc-left, .desc-right {
+	width: 567px;
+}
+
+.gallery {
+	margin-top: 67px;
+	display: flex;
+	justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.gallery img {
+	transition: all 0.5s ease;
+}
+
+.gallery img:hover {
+	box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+	transform: scale(1.1);
+}
+
+@media (max-width: 1430px){
+
+    .name{
+	    font-size: 45px;
+    }
+
+    .nav{
+        align-items: center;
+    }
+}
+
+@media (max-width: 1220px){
+    .name{
+	    font-size: 40px;
+    }
+
+    .description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h3{
+        text-align: center;
+    }
+
+    .gallery{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .gallery img{
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 730px){
+    .name{
+	    font-size: 35px;
+        margin-bottom: 0;
+    }
+
+    .description{
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    h3{
+        text-align: center;
+    }
+
+    .gallery{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .gallery img{
+        margin-bottom: 15px;
+    }
+
+    .pht12{
+        width: 210px;
+    }
+
+    .pht3{
+        width: 490px;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav a{
+        margin: 0 auto;
+    }
+
+    .about .container{
+        margin-top: 10px;
+    }
+
+    .nav p{
+        margin: 0 auto;
+    }
+
+    .nav{
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+   }
+
+   .nav img{
+       margin: 0 auto;
+   }
+
+   main{
+       margin-top: 0;
+   }
+
+   main .container{
+       justify-content: space-around;
+       position: relative;
+   }
+
+
+}
+
+@media(max-width: 615px){
+    
+    .name{
+	    font-size: 28px;
+        margin-bottom: 0;
+    }
+
+    .description{
+        font-size: 11px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .desc-left, .desc-right {
+        width: 100%;
+    }
+
+    .gallery img{
+        width: 100%;
+        height: 100%;
+    }
+}

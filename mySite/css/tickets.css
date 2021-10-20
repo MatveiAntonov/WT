@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+   font-family: 'Anton', sans-serif;
+   color: 000;
+   font-size: 16px;
+   background: url('../images/intro.jpg') repeat center top / cover;
+   background-repeat:repeat;
+   background-clip: content-box;
+   user-select: none;
+   height: 100%;
+   background-attachment: fixed;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main{
+    margin-top: 20px;
+    background:#ffffff70;
+    border-radius: 80px;
+}
+
+
+.header {
+    height: 100px;
+    padding-top: 30px;
+
+}
+
+header a {
+    color: #fff;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 40px;
+    letter-spacing: 0.1em;      
+    justify-content:space-between;
+    transition: all 0.5s ease;
+}
+.menu p{
+    margin: auto;
+    text-transform: uppercase;
+    margin-right: 40px;
+    letter-spacing: 0.1em;      
+    justify-content:space-between;
+    transition: all 0.5s ease; 
+    color:#f7d201;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    color: #0b061d;
+    text-decoration: underline;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav img{
+    margin-left: 50px;
+}
+
+.name{
+    font-size: 50px;
+    text-align: center;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin: 0 170;
+    align-items: center;
+}
+
+input{
+    width: 19em;
+    border-radius: 2em;
+    height: 2.4em;
+    margin-bottom: 0em;
+
+}
+
+.forms p{
+    font-size: 1.5em;
+    margin-bottom: 0.1em;
+}
+
+.last{
+    margin-bottom: 1em;
+}
+
+.confirm{
+    font-family:sans-serif;
+    letter-spacing: 0.2em;
+    margin: 8px auto;
+    font-size: 0.8em;
+    width: 10em;
+    background: #000;
+    color: white;
+    height: 3em;
+    border-radius: 2em;
+}
+
+@media(max-width: 710px){
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav a{
+        margin: 0 auto;
+    }
+
+    .nav p{
+        margin: 0 auto;
+    }
+
+    .nav{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+   .nav img{
+       margin: 0 auto;
+   }
+
+   .header{
+       height: 100%;
+   }
+
+   .confirm{
+       margin: 0 auto;
+   }
+
+   .name{
+       font-size: 32px;
+   }
+
+   .forms p{
+       font-size: 16px;
+   }
+
+   .input{
+       width: 200px;
+   }
+
+   .confirm{
+       height: 30px;
+       margin-top: 10px;
+   }
+}
