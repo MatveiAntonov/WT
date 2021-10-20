@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Travel</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container" id="container">
+            <div class="header_inner">
+                <div class="header_logo">Travel</div>
+                <nav class="nav">
+                    <a class="nav_link active"  href="index.html">Home</a>
+                    <a class="nav_link" href="pricing+services.html">Services</a>
+                    <a class="nav_link" href="#">About</a>                 
+                    <a class="nav_link" href="#">Gallery</a>
+                    <a class="nav_link" href="#">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="intro">
+        <div class="container_main">
+            <div class="intro_inner">
+                <h1 class="intro_title"><span class="travel_is">Travel is</span> beautiful</h1>
+                <p class="intro_subtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                <button id="modal_button" class="modal_button">Open</button>
+            </div>
+            <form action="https://rpi-lab2.herokuapp.com/api/message" method="POST">
+                <div class="writebox">
+                    <h5 class="request">REQUEST A QUOTE</h5>
+                    <input class="input_name" type="text" name="userName" placeholder="Your Name" required>
+                    <input class="input_name" type="text" name="message" placeholder="Your Message" required>
+                    <p class="accept">I accept the terms & conditions</p>
+                    <button class="button" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+    <script src="js/app.js"></script>
+
+</body>
+</html>
